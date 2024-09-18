@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weatherode"
+version = "0.0.1"
+authors =[
+    {name="Tung Nguyen", email="tungnd@g.ucla.edu"},
+    {name="Jayesh K. Gupta", email="mail@rejuvyesh.com"}
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
