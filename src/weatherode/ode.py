@@ -109,7 +109,7 @@ class WeatherODE(nn.Module):
             elif err_type == "2+1D":
                 self.noise_model = ClimateResNet2Plus1D(noise_input_channels, self.layers, noise_hidden)
             elif err_type == "DiT":
-                self.noise_model = DiT(input_size=tuple(img_size), in_channels=noise_input_channels, out_channels=len(self.default_vars), depth=4, hidden_size=768, patch_size=2, num_heads=12)
+                self.noise_model = DiT(input_size=tuple(img_size), in_channels=noise_input_channels, out_channels=len(self.default_vars), depth=self.layers)
             elif err_type == "2DTime":
                 self.noise_model = ClimateResNet2DTime(noise_input_channels, self.layers, noise_hidden, t_embed_dim=hidden[0])
 
