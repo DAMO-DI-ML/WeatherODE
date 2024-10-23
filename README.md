@@ -1,5 +1,7 @@
 # WeatherODE
 
+Peiyuan Liu, Tian Zhou, Liang Sun, Rong Jin, "Mitigating Time Discretization Challenges with WeatherODE: A Sandwich Physics-Driven Neural ODE for Weather Forecasting". [[paper](https://arxiv.org/abs/2410.06560)]
+
 ## Overview
 
 WeatherODE is a comprehensive framework designed for global and regional weather forecasting based on the ERA5 dataset. The package includes preprocessing scripts, model training pipelines, and evaluation tools tailored for different forecasting horizons (6h, 12h, 18h, and 24h). It supports global and regional forecasting for various areas including Australia, North America, and South America.
@@ -97,3 +99,13 @@ Scripts are also provided for 12-hour, 18-hour, and 24-hour forecasts. Additiona
 
 We acknowledge the use of the ERA5 reanalysis data provided by the European Centre for Medium-Range Weather Forecasts (ECMWF) and the WeatherBench dataset for benchmarking.
 
+## Citation
+If you find this repo useful, please cite our paper.
+```
+@article{liu2024mitigating,
+  title={Mitigating Time Discretization Challenges with WeatherODE: A Sandwich Physics-Driven Neural ODE for Weather Forecasting},
+  author={Liu, Peiyuan and Zhou, Tian and Sun, Liang and Jin, Rong},
+  journal={arXiv preprint arXiv:2410.06560},
+  year={2024}
+}
+```
